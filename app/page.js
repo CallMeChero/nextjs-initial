@@ -1,14 +1,15 @@
-import Link from 'next/link';
-import Header from '@/component/header';
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      <p>🔥 Let&apos;s get started! 🔥</p>
-      <p>
-        <Link href="/about">Go to about</Link>
-      </p>
+      <h1 style={{ color: 'white', textAlign: 'center' }}>
+        Time to get started!
+      </h1>
+      <p><Link href="/meals">Meals</Link></p>
+      <p><Link href="/meals/share">Share meal</Link></p>
+      <p><Link href="/meals/1">Slug meal</Link></p>
+      <p><Link href="/community">Community</Link></p>
     </main>
   );
 }
